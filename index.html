@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hacktiv8 Spy Locker by David Susilo</title>
+        <link href="style.css" rel="stylesheet" /> 
+    </head>
+  
+    <body>
+
+        <h1>The Spy Secret Locker</h1>
+        <img src="The_Spy_FM_Logo.png">
+  
+        <h2>SAVING SECRET MODE</h2>
+        
+        <div class="">
+            <text class="" id="display">
+        </div>
+
+        <div class="form">
+            <div>
+
+                <div class="locker">
+                    <label for="locker">Locker Number</label>
+                </div>
+                <input type="text|number" id="locker" onkeypress="return event.charCode > 48 && event.charCode <= 57" placeholder="1 to 9" min="1" max="9" maxlength="1" required>
+                
+                <br><br>
+                
+                <div class="pin">
+                    <label for="pin">PIN </label>
+                </div>
+                <input type="password" onkeypress="return event.charCode >= 48 && event.charCode <= 57" id="pin" placeholder="4 digit codes" min="0000" max="9999" maxLength="4" required>
+
+                <br><br>
+
+                <div class="message">
+                    <label for="message">Message</label>
+                </div>
+                <input type="text" id="message" required>
+
+                <br><br>
+
+                <div class="save">
+                    <button onclick="create();">Save Secret</button>
+                </div> 
+
+            </div>
+        </div>
+
+        <h3>Professional Spy Use Only</h3>
+  </body>
+
+  <script src="message.js"></script>
+
+</html>
